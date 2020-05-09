@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="muledeployprojFlow" doc:id="9739af4d-e49c-4905-93a2-5003393a687a" >
 		<http:listener doc:name="Listener" doc:id="d79d8b39-d1e9-497e-8102-e19b0afd7f67" config-ref="HTTP_Listener_config" path="dp"/>
 		<set-payload value="first payload to deploy to cloudhub" doc:name="Set Payload" doc:id="dc27d5c7-d284-4993-bdd5-33c7b0b769d2" />
+		<logger level="INFO" doc:name="Logger" doc:id="a0eb351d-1246-459c-8144-8623f7d3d971" message="Logger added for checking github sync"/>
 	</flow>
 </mule>
